@@ -14,7 +14,6 @@ from sklearn.metrics import r2_score
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.neighbors import KNeighborsClassifier
-from streamlit.hashing import _CodeHasher
 from sklearn.decomposition import PCA
 from umap import UMAP
 from scipy.spatial import distance
@@ -34,7 +33,7 @@ st.markdown("""
     box-sizing: border-box;
     text-align: center;
     width: 100%;
-    border: solid #F65323 6px;
+    border: solid #52BE80 3px;
     padding: 5px;
 }
 .intro{
@@ -45,7 +44,7 @@ st.markdown("""
     font-size:30px !important;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: #2782CD;
+    text-decoration-color: #E74C3C;
     text-decoration-thickness: 5px;
 }
 .grand_titre_section_ML_DL {
@@ -77,7 +76,6 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-
 
 ###### Fonctions #######
 
@@ -151,18 +149,11 @@ def load_img(path_to_img):
 ##################################
 
 
-
-uploaded_file = st.sidebar.file_uploader("Chargez votre dataset 📚", type=['csv', 'xls'])
-if uploaded_file is not None:
-    st.session_state.file_details = {"FileName": uploaded_file.name,
-                                     "FileType": uploaded_file.type,
-                                     "FileSize": uploaded_file.size}
-    st.sidebar.success('Fichier chargé avec succès !')
-
-
 # Session
 if "col_to_time" not in st.session_state:
     st.session_state.col_to_time = ""
+if "drop_col" not in st.session_state:
+    st.session_state.drop_col = ""
 if "col_to_float_money" not in st.session_state:
     st.session_state.col_to_float_money = ""
 if "col_to_float_coma" not in st.session_state:
@@ -174,6 +165,13 @@ if "slider_col" not in st.session_state:
 if "degres" not in st.session_state:
     st.session_state.degres = ""
 
+
+uploaded_file = st.sidebar.file_uploader("Chargez votre dataset 📚", type=['csv', 'xls'])
+if uploaded_file is not None:
+    st.session_state.file_details = {"FileName": uploaded_file.name,
+                                     "FileType": uploaded_file.type,
+                                     "FileSize": uploaded_file.size}
+    st.sidebar.success('Fichier chargé avec succès !')
 
 # Pages principales
 PAGES = ["Accueil", "Dataset", "Analyse des colonnes", "Matrice de corrélations", "Section graphiques", "Machine Learning", "Deep Learning"]
@@ -189,10 +187,10 @@ if choix_page == "Accueil" :
     st.write("##")
     st.markdown(
         '<p class="intro">Bienvenue sur le site de Preprocessing en ligne ! Déposez vos datasets csv et excel et commencez votre analyse dès maintenant ! Cherchez les variables les plus intéressantes, visualisez vos données et créez vos modèles de Machine et Deep Learning. ' +
-        'Pour charger votre dataset, uploadez le depuis le volet latéral, et rendez vous dans la section "Dataset".</p>',
+        'Pour charger votre dataset, uploadez le depuis le volet latéral, et rendez vous dans la section "Dataset". Si vous effectuez des modifications sur le dataset, il faudra le télécharger pour pouvoir l\'utiliser sur les autres pages.</p>',
         unsafe_allow_html=True)
     st.markdown(
-        '<p class="intro">Un tutoriel sur l\'utilisation de ce site est disponible sur [Github](https://github.com/antonin-lfv/Online_preprocessing_for_ML). Si vous souhaitez un dataset pour ' +
+        '<p class="intro">Un tutoriel sur l\'utilisation de ce site est disponible sur <a href="https://github.com/antonin-lfv/Online_preprocessing_for_ML">Github</a>. Si vous souhaitez un dataset pour ' +
         'simplement tester, vous pouvez télécharger le dataset des iris <a href="https://www.kaggle.com/arshid/iris-flower-dataset">ici</a>.</p>',
         unsafe_allow_html=True)
     st.markdown(
@@ -220,70 +218,85 @@ elif choix_page == 'Dataset' :
     if "data" not in st.session_state :
         load_data()
 
-    col1_1, b_1, col2_1 = st.beta_columns((1, 0.1, 1))
-    col1, b, col2 = st.beta_columns((2.7, 0.3, 1))
+    col1_1, b_1, col2_1 = st.columns((1, 0.1, 1))
+    col1, b, col2 = st.columns((2.7, 0.2, 1))
     if "data" in st.session_state :
-        with col1_1:
-            st.session_state.separateur = st.text_input("Séparateur (optionnel): ")
-        st.write("##")
-
-        load_data()
-
-        st.markdown("<p class='petite_section'>Modifications du dataset : </p>", unsafe_allow_html=True)
-        col1_1, b_1, col2_1, c_1, col3_1 = st.beta_columns((1, 0.2, 1, 0.2, 1))  # pour time series
-        st.write("##")
-
-        with col1_1:
-            st.session_state.col_to_time = st.multiselect(label='Conversion Time Series',
-                           options=st.session_state.data.columns.tolist(),
-                           )
-        with col2_1:
-            st.session_state.col_to_float_money = st.multiselect('Conversion Monnaies',
-                           st.session_state.data.columns.tolist(),
-                           )
-        with col3_1:
-            st.session_state.col_to_float_coma = st.multiselect('Conversion string avec virgules vers float',
-                           st.session_state.data.columns.tolist(),
-                           )
-
-        with col1_1:
-            for col in st.session_state["col_to_time"]:
-                try:
-                    st.session_state.data[col] = pd.to_datetime(st.session_state.data[col])
-                    st.success("Transformation de "+col+" effectuée !")
-                except:
-                    st.error("Transformation impossible ou déjà effectuée")
-        with col2_1:
-            for col in st.session_state.col_to_float_money:
-                try:
-                    st.session_state.data[col] = st.session_state.data[col].apply(clean_data).astype('float')
-                    st.success("Transformation de "+col+" effectuée !")
-                except:
-                    st.error("Transformation impossible ou déjà effectuée")
-        with col3_1:
-            for col in st.session_state.col_to_float_coma:
-                try:
-                    st.session_state.data[col] = st.session_state.data[col].apply(lambda x: float(str(x).replace(',', '.')))
-                    st.success("Transformation de "+col+" effectuée !")
-                except:
-                    st.error("Transformation impossible ou déjà effectuée")
-
-        with col1:
-            st.write("##")
-            st.markdown('<p class="section">Aperçu</p>', unsafe_allow_html=True)
-            st.write(st.session_state.data.head(50))
+        my_expander = st.expander(label="Options de preprocessing")
+        with my_expander :
+            with col1_1:
+                st.session_state.separateur = st.text_input("Séparateur (optionnel): ")
             st.write("##")
 
-        with col2:
+            load_data()
+
+            st.markdown("<p class='petite_section'>Modifications du dataset : </p>", unsafe_allow_html=True)
+            col1_1, b_1, col2_1, c_1, col3_1 = st.columns((1, 0.2, 1, 0.2, 1))  # pour time series
             st.write("##")
-            st.markdown('<p class="section">Caractéristiques</p>', unsafe_allow_html=True)
-            st.write(' - Taille:', st.session_state.data.shape)
-            st.write(' - Nombre de valeurs:', st.session_state.data.shape[0] * st.session_state.data.shape[1])
-            st.write(' - Type des colonnes:', st.session_state.data.dtypes.value_counts())
-            st.write(' - Pourcentage de valeurs manquantes:', round(
-                sum(pd.DataFrame(st.session_state.data).isnull().sum(axis=1).tolist()) * 100 / (
-                        st.session_state.data.shape[0] * st.session_state.data.shape[1]), 2),
-                     ' % (', sum(pd.DataFrame(st.session_state.data).isnull().sum(axis=1).tolist()), ')')
+            option_col_update = st.session_state.data.columns.tolist()
+
+            with col1_1:
+                st.session_state.col_to_time = st.multiselect(label='Conversion Time Series',
+                               options=option_col_update,
+                               )
+            with col2_1:
+                st.session_state.col_to_float_money = st.multiselect('Conversion Monnaies',
+                               options = option_col_update,
+                               )
+            with col3_1:
+                st.session_state.col_to_float_coma = st.multiselect('Conversion string avec virgules vers float',
+                               options = option_col_update,
+                               )
+            with col1_1:
+                st.session_state.drop_col = st.multiselect(label='Drop columns',
+                               options=option_col_update,
+                               )
+
+            with col1_1:
+                for col in st.session_state["col_to_time"]:
+                    try:
+                        st.session_state.data[col] = pd.to_datetime(st.session_state.data[col])
+                        st.success("Transformation de "+col+" effectuée !")
+                    except:
+                        st.error("Transformation impossible ou déjà effectuée")
+            with col2_1:
+                for col in st.session_state.col_to_float_money:
+                    try:
+                        st.session_state.data[col] = st.session_state.data[col].apply(clean_data).astype('float')
+                        st.success("Transformation de "+col+" effectuée !")
+                    except:
+                        st.error("Transformation impossible ou déjà effectuée")
+            with col3_1:
+                for col in st.session_state.col_to_float_coma:
+                    try:
+                        st.session_state.data[col] = st.session_state.data[col].apply(lambda x: float(str(x).replace(',', '.')))
+                        st.success("Transformation de "+col+" effectuée !")
+                    except:
+                        st.error("Transformation impossible ou déjà effectuée")
+            with col1_1:
+                for col in st.session_state["drop_col"]:
+                    try:
+                        st.session_state.data = st.session_state.data.drop(columns=col, axis=1)
+                        st.success("Colonnes "+col+" supprimée !")
+                    except:
+                        st.error("Transformation impossible ou déjà effectuée")
+
+            with col1:
+                st.write("##")
+                st.markdown('<p class="section">Aperçu</p>', unsafe_allow_html=True)
+                st.write(st.session_state.data.head(50))
+                st.write("##")
+
+            with col2:
+                st.write("##")
+                st.markdown('<p class="section">Caractéristiques</p>', unsafe_allow_html=True)
+                st.write(' - Taille:', st.session_state.data.shape)
+                st.write(' - Nombre de valeurs:', st.session_state.data.shape[0] * st.session_state.data.shape[1])
+                st.write(' - Type des colonnes:', st.session_state.data.dtypes.value_counts())
+                st.write(' - Pourcentage de valeurs manquantes:', round(
+                    sum(pd.DataFrame(st.session_state.data).isnull().sum(axis=1).tolist()) * 100 / (
+                            st.session_state.data.shape[0] * st.session_state.data.shape[1]), 2),
+                         ' % (', sum(pd.DataFrame(st.session_state.data).isnull().sum(axis=1).tolist()), ')')
+            st.download_button(data=st.session_state.data.to_csv(), label="Télécharger le dataset modifié", file_name='dataset.csv')
 ############# Page 2 #############
 
 
@@ -308,7 +321,7 @@ elif choix_page == "Analyse des colonnes" :
             options,
         )
         if st.session_state.slider_col:
-            col1, b, col2, c = st.beta_columns((1.1, 0.1, 1.1, 0.3))
+            col1, b, col2, c = st.columns((1.1, 0.1, 1.1, 0.3))
             with col1:
                 st.write('##')
                 st.markdown('<p class="section">Aperçu</p>', unsafe_allow_html=True)
@@ -321,7 +334,7 @@ elif choix_page == "Analyse des colonnes" :
                 n_data = st.session_state.data[col].to_numpy()
 
                 st.write('##')
-                col1, b, col2, c = st.beta_columns((1, 1, 2, 0.5))
+                col1, b, col2, c = st.columns((1, 1, 2, 0.5))
                 with col1:
                     st.markdown('<p class="nom_colonne_page3">' + col + '</p>', unsafe_allow_html=True)
                     st.write(data_col.head(20))
@@ -379,7 +392,7 @@ elif choix_page == "Matrice de corrélations" :
     st.markdown('<p class="grand_titre">Matrice de corrélations</p>', unsafe_allow_html=True)
     st.write("##")
     if 'data' in st.session_state :
-        col1, b, col2 = st.beta_columns((1, 1, 2))
+        col1, b, col2 = st.columns((1, 1, 2))
         df_sans_NaN = st.session_state.data
         with col1:
             st.session_state.couleur_corr = st.selectbox('Couleur', ['Selectionner une colonne'] + df_sans_NaN.columns.tolist(),
@@ -451,7 +464,7 @@ elif choix_page == "Section graphiques":
     st.markdown('<p class="grand_titre">Graphiques et regressions</p>', unsafe_allow_html=True)
     st.write("##")
     if 'data' in st.session_state:
-        col1, b, col2, c, col3, d, col4 = st.beta_columns((7))  # pour les autres select
+        col1, b, col2, c, col3, d, col4 = st.columns((7))  # pour les autres select
         col_num = col_numeric(st.session_state.data) + st.session_state.col_to_time
         with col1:
             st.write("##")
@@ -609,20 +622,17 @@ elif choix_page == "Section graphiques":
 
 ############# ML section #############
 elif choix_page == "Machine Learning":
-    st.markdown('<p class="first_titre">Machine Learning</p>', unsafe_allow_html=True)
-    st.write("##")
     # Pages
     PAGES_ML = ["K-nearest neighbors", "K-Means", "Support Vector Machine", "PCA", "UMAP"]
-    st.sidebar.title('Algo ML :control_knobs:')
+    st.sidebar.title('Machine Learning :control_knobs:')
     st.sidebar.radio(label="", options=PAGES_ML, key="choix_page_ml")
 
 
 
     if st.session_state.choix_page_ml == "K-nearest neighbors" :
-        st.write("##")
         st.markdown('<p class="grand_titre">KNN : k-nearest neighbors</p>', unsafe_allow_html=True)
         if 'data' in st.session_state:
-            col1, b, col2 = st.beta_columns((1, 0.2, 1))
+            col1, b, col2 = st.columns((1, 0.2, 1))
             with col1:
                 st.write("##")
                 st.markdown('<p class="section">Selection des colonnes pour le modèle (target+features)</p>',
@@ -743,10 +753,9 @@ elif choix_page == "Machine Learning":
 
 
     elif st.session_state.choix_page_ml == "K-Means" :
-        st.write("##")
         st.markdown('<p class="grand_titre">K-Means</p>', unsafe_allow_html=True)
         if 'data' in st.session_state :
-            col1, b, col2 = st.beta_columns((1, 0.2, 1))
+            col1, b, col2 = st.columns((1, 0.2, 1))
             with col1:
                 st.write("##")
                 st.markdown('<p class="section">Selection des features pour le modèle</p>', unsafe_allow_html=True)
@@ -815,12 +824,11 @@ elif choix_page == "Machine Learning":
 
 
     elif st.session_state.choix_page_ml == "Support Vector Machine" :
-        st.write("##")
         st.markdown('<p class="grand_titre">SVM : Support Vector Machine</p>', unsafe_allow_html=True)
         if 'data' in st.session_state :
             st.write("##")
             st.markdown('<p class="section">Selection des features et de la target</p>', unsafe_allow_html=True)
-            col1, b, col2 = st.beta_columns((1, 0.2, 1))
+            col1, b, col2 = st.columns((1, 0.2, 1))
             with col1:
                 st.session_state.choix_col_SVM = st.multiselect("Choisir deux colonnes", col_numeric(st.session_state.data),
                                                      )
@@ -925,10 +933,9 @@ elif choix_page == "Machine Learning":
 
 
     elif st.session_state.choix_page_ml == "PCA" :
-        st.write("##")
         st.markdown('<p class="grand_titre">PCA : Analyse en composantes principales</p>', unsafe_allow_html=True)
         if 'data' in st.session_state :
-            col1, b, col2 = st.beta_columns((1, 0.2, 1))
+            col1, b, col2 = st.columns((1, 0.2, 1))
             with col1:
                 st.write("##")
                 st.markdown('<p class="section">Selection des colonnes pour le modèle PCA (target+features)</p>',
@@ -997,10 +1004,9 @@ elif choix_page == "Machine Learning":
 
 
     elif st.session_state.choix_page_ml == "UMAP" :
-        st.write("##")
         st.markdown('<p class="grand_titre">UMAP : Uniform Manifold Approximation and Projection</p>',unsafe_allow_html=True)
         if 'data' in st.session_state :
-            col1, b, col2 = st.beta_columns((1, 0.2, 1))
+            col1, b, col2 = st.columns((1, 0.2, 1))
             with col1:
                 st.write("##")
                 st.markdown('<p class="section">Selection des colonnes pour le modèle UMAP (target+features)</p>',
@@ -1079,22 +1085,20 @@ elif choix_page == "Machine Learning":
 
 ############# DL section #############
 elif choix_page == "Deep Learning":
-    st.markdown('<p class="first_titre">Deep Learning</p>', unsafe_allow_html=True)
-    st.write("##")
     # Pages
     PAGES_DL = ["Transfert de style neuronal", "GAN"]
-    st.sidebar.title('Algo DL :control_knobs:')
+    st.sidebar.title('Deep Learning :control_knobs:')
     choix_page_dl = st.sidebar.radio(label="", options=PAGES_DL)
 
     if choix_page_dl == "Transfert de style neuronal":
-        st.write("##")
         st.markdown('<p class="grand_titre">Transfert de style neuronal</p>', unsafe_allow_html=True)
         st.write("##")
         content_path = {'Chat': 'images/tensorflow_images/chat1.jpg',
-                        'Los Angeles street': 'images/tensorflow_images/LA_street.jpg'}
+                        }
         style_path = {'La nuit étoilée - Van_Gogh': 'images/tensorflow_images/Van_Gogh1.jpg',
-                      'Guernica - Picasso': 'images/tensorflow_images/GUERNICA.jpg', }
-        col1, b, col2 = st.beta_columns((1, 0.2, 1))
+                      'Guernica - Picasso': 'images/tensorflow_images/GUERNICA.jpg',
+                      'Le cri' : 'images/tensorflow_images/LE_cri.jpg'}
+        col1, b, col2 = st.columns((1, 0.2, 1))
         with col1:
             st.markdown('<p class="section">Selectionner une image de contenu</p>', unsafe_allow_html=True)
             st.session_state.image_contenu = st.selectbox("Choisir une image", list(content_path.keys()),
@@ -1148,7 +1152,6 @@ elif choix_page == "Deep Learning":
             st.plotly_chart(fig)
 
     elif choix_page_dl == "GAN":
-        st.write("##")
         st.markdown('<p class="grand_titre">GAN : Generative adversarial network</p>', unsafe_allow_html=True)
         if 'data' in st.session_state :
             st.write("##")

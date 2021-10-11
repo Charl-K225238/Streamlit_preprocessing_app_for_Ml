@@ -1,8 +1,16 @@
+[global]
+# By default, Streamlit checks if the Python watchdog module is available and, if not, prints a warning asking for you to install it. The watchdog module is not required, but highly recommended. It improves Streamlit's ability to detect changes to files in your filesystem.
+# If you'd like to turn off this warning, set this to True.
+# Default: false
+disableWatchdogWarning = false
+
+dataFrameSerialization = "legacy"
+
 [theme]
 base="light"
 
 # Primary accent color for interactive elements.
-primaryColor = '#2e86de'
+primaryColor = '#229954'
 
 # Background color for the main content area.
 backgroundColor= '#FFF'

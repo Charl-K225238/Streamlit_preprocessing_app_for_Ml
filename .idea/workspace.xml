@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3ef27b0-8bd9-4fec-9e02-9a39df4fad19" name="Default Changelist" comment="update streamlit 84.2" />
+    <list default="true" id="f3ef27b0-8bd9-4fec-9e02-9a39df4fad19" name="Default Changelist" comment="Color theme">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,350 +101,350 @@
       <option name="presentableId" value="Default" />
       <updated>1623251491652</updated>
     </task>
-    <task id="LOCAL-00233" summary="home">
-      <created>1624627186429</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
+    <task id="LOCAL-00283" summary="update streamlit 88 - adding st.download and st.expander">
+      <created>1631812920094</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
       <option name="project" value="LOCAL" />
-      <updated>1624627186429</updated>
+      <updated>1631812920095</updated>
     </task>
-    <task id="LOCAL-00234" summary="DL">
-      <created>1624650152409</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
+    <task id="LOCAL-00284" summary="update streamlit 88 - adding st.download and st.expander">
+      <created>1631813293293</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
       <option name="project" value="LOCAL" />
-      <updated>1624650152410</updated>
+      <updated>1631813293294</updated>
     </task>
-    <task id="LOCAL-00235" summary="DL">
-      <created>1624650805266</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
+    <task id="LOCAL-00285" summary="0.89 version">
+      <created>1632385611493</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
       <option name="project" value="LOCAL" />
-      <updated>1624650805266</updated>
+      <updated>1632385611494</updated>
     </task>
-    <task id="LOCAL-00236" summary="k-means">
-      <created>1624719905865</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
+    <task id="LOCAL-00286" summary="update streamlit 1.0 !">
+      <created>1633590819745</created>
+      <option name="number" value="00286" />
+      <option name="presentableId" value="LOCAL-00286" />
       <option name="project" value="LOCAL" />
-      <updated>1624719905865</updated>
+      <updated>1633590819745</updated>
     </task>
-    <task id="LOCAL-00237" summary="k-means">
-      <created>1624719968175</created>
-      <option name="number" value="00237" />
-      <option name="presentableId" value="LOCAL-00237" />
+    <task id="LOCAL-00287" summary="update streamlit 1.0 !">
+      <created>1633591048466</created>
+      <option name="number" value="00287" />
+      <option name="presentableId" value="LOCAL-00287" />
       <option name="project" value="LOCAL" />
-      <updated>1624719968175</updated>
+      <updated>1633591048466</updated>
     </task>
-    <task id="LOCAL-00238" summary="KNN">
-      <created>1624789913401</created>
-      <option name="number" value="00238" />
-      <option name="presentableId" value="LOCAL-00238" />
+    <task id="LOCAL-00288" summary="update streamlit 1.0 !">
+      <created>1633591201175</created>
+      <option name="number" value="00288" />
+      <option name="presentableId" value="LOCAL-00288" />
       <option name="project" value="LOCAL" />
-      <updated>1624789913401</updated>
+      <updated>1633591201175</updated>
     </task>
-    <task id="LOCAL-00239" summary="drop">
-      <created>1624796753601</created>
-      <option name="number" value="00239" />
-      <option name="presentableId" value="LOCAL-00239" />
+    <task id="LOCAL-00289" summary="update streamlit 1.0 !">
+      <created>1633607314622</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
       <option name="project" value="LOCAL" />
-      <updated>1624796753601</updated>
+      <updated>1633607314623</updated>
     </task>
-    <task id="LOCAL-00240" summary="drop">
-      <created>1624796793876</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
+    <task id="LOCAL-00290" summary="update streamlit 1.0">
+      <created>1633608475323</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
       <option name="project" value="LOCAL" />
-      <updated>1624796793877</updated>
+      <updated>1633608475323</updated>
     </task>
-    <task id="LOCAL-00241" summary="drop">
-      <created>1624796998537</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
+    <task id="LOCAL-00291" summary="update streamlit 1.0">
+      <created>1633608482701</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
       <option name="project" value="LOCAL" />
-      <updated>1624796998537</updated>
+      <updated>1633608482701</updated>
     </task>
-    <task id="LOCAL-00242" summary="drop">
-      <created>1624797073586</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
+    <task id="LOCAL-00292" summary="update streamlit 1.0">
+      <created>1633608668084</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
       <option name="project" value="LOCAL" />
-      <updated>1624797073586</updated>
+      <updated>1633608668084</updated>
     </task>
-    <task id="LOCAL-00243" summary="drop">
-      <created>1624797138937</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
+    <task id="LOCAL-00293" summary="update streamlit 1.0">
+      <created>1633609046951</created>
+      <option name="number" value="00293" />
+      <option name="presentableId" value="LOCAL-00293" />
       <option name="project" value="LOCAL" />
-      <updated>1624797138937</updated>
+      <updated>1633609046952</updated>
     </task>
-    <task id="LOCAL-00244" summary="drop">
-      <created>1624797543792</created>
-      <option name="number" value="00244" />
-      <option name="presentableId" value="LOCAL-00244" />
+    <task id="LOCAL-00294" summary="update streamlit 1.0">
+      <created>1633609180889</created>
+      <option name="number" value="00294" />
+      <option name="presentableId" value="LOCAL-00294" />
       <option name="project" value="LOCAL" />
-      <updated>1624797543793</updated>
+      <updated>1633609180890</updated>
     </task>
-    <task id="LOCAL-00245" summary="SVM">
-      <created>1624831598192</created>
-      <option name="number" value="00245" />
-      <option name="presentableId" value="LOCAL-00245" />
+    <task id="LOCAL-00295" summary="update streamlit 1.0">
+      <created>1633609512382</created>
+      <option name="number" value="00295" />
+      <option name="presentableId" value="LOCAL-00295" />
       <option name="project" value="LOCAL" />
-      <updated>1624831598193</updated>
+      <updated>1633609512382</updated>
     </task>
-    <task id="LOCAL-00246" summary="SVM">
-      <created>1624831614789</created>
-      <option name="number" value="00246" />
-      <option name="presentableId" value="LOCAL-00246" />
+    <task id="LOCAL-00296" summary="update streamlit 1.0">
+      <created>1633609600933</created>
+      <option name="number" value="00296" />
+      <option name="presentableId" value="LOCAL-00296" />
       <option name="project" value="LOCAL" />
-      <updated>1624831614789</updated>
+      <updated>1633609600933</updated>
     </task>
-    <task id="LOCAL-00247" summary="menu">
-      <created>1624831723386</created>
-      <option name="number" value="00247" />
-      <option name="presentableId" value="LOCAL-00247" />
+    <task id="LOCAL-00297" summary="update streamlit 1.0">
+      <created>1633609672786</created>
+      <option name="number" value="00297" />
+      <option name="presentableId" value="LOCAL-00297" />
       <option name="project" value="LOCAL" />
-      <updated>1624831723387</updated>
+      <updated>1633609672786</updated>
     </task>
-    <task id="LOCAL-00248" summary="menu">
-      <created>1624831803587</created>
-      <option name="number" value="00248" />
-      <option name="presentableId" value="LOCAL-00248" />
+    <task id="LOCAL-00298" summary="update streamlit 1.0">
+      <created>1633609791312</created>
+      <option name="number" value="00298" />
+      <option name="presentableId" value="LOCAL-00298" />
       <option name="project" value="LOCAL" />
-      <updated>1624831803587</updated>
+      <updated>1633609791312</updated>
     </task>
-    <task id="LOCAL-00249" summary="SVM">
-      <created>1624884825944</created>
-      <option name="number" value="00249" />
-      <option name="presentableId" value="LOCAL-00249" />
+    <task id="LOCAL-00299" summary="update streamlit 1.0">
+      <created>1633609845546</created>
+      <option name="number" value="00299" />
+      <option name="presentableId" value="LOCAL-00299" />
       <option name="project" value="LOCAL" />
-      <updated>1624884825945</updated>
+      <updated>1633609845546</updated>
     </task>
-    <task id="LOCAL-00250" summary="SVM">
-      <created>1624889238351</created>
-      <option name="number" value="00250" />
-      <option name="presentableId" value="LOCAL-00250" />
+    <task id="LOCAL-00300" summary="update streamlit 1.0">
+      <created>1633609859380</created>
+      <option name="number" value="00300" />
+      <option name="presentableId" value="LOCAL-00300" />
       <option name="project" value="LOCAL" />
-      <updated>1624889238351</updated>
+      <updated>1633609859380</updated>
     </task>
-    <task id="LOCAL-00251" summary="svm">
-      <created>1625008727872</created>
-      <option name="number" value="00251" />
-      <option name="presentableId" value="LOCAL-00251" />
+    <task id="LOCAL-00301" summary="update streamlit 1.0">
+      <created>1633610006858</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
       <option name="project" value="LOCAL" />
-      <updated>1625008727873</updated>
+      <updated>1633610006858</updated>
     </task>
-    <task id="LOCAL-00252" summary="svm">
-      <created>1625008794034</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
+    <task id="LOCAL-00302" summary="update streamlit 1.0">
+      <created>1633610356142</created>
+      <option name="number" value="00302" />
+      <option name="presentableId" value="LOCAL-00302" />
       <option name="project" value="LOCAL" />
-      <updated>1625008794034</updated>
+      <updated>1633610356142</updated>
     </task>
-    <task id="LOCAL-00253" summary="svm">
-      <created>1625010683130</created>
-      <option name="number" value="00253" />
-      <option name="presentableId" value="LOCAL-00253" />
+    <task id="LOCAL-00303" summary="update streamlit 1.0">
+      <created>1633610697370</created>
+      <option name="number" value="00303" />
+      <option name="presentableId" value="LOCAL-00303" />
       <option name="project" value="LOCAL" />
-      <updated>1625010683130</updated>
+      <updated>1633610697371</updated>
     </task>
-    <task id="LOCAL-00254" summary="SVM">
-      <created>1625067049471</created>
-      <option name="number" value="00254" />
-      <option name="presentableId" value="LOCAL-00254" />
+    <task id="LOCAL-00304" summary="update streamlit 1.0">
+      <created>1633610792256</created>
+      <option name="number" value="00304" />
+      <option name="presentableId" value="LOCAL-00304" />
       <option name="project" value="LOCAL" />
-      <updated>1625067049471</updated>
+      <updated>1633610792256</updated>
     </task>
-    <task id="LOCAL-00255" summary="SVM">
-      <created>1625067597137</created>
-      <option name="number" value="00255" />
-      <option name="presentableId" value="LOCAL-00255" />
+    <task id="LOCAL-00305" summary="Neural transfert">
+      <created>1633722767096</created>
+      <option name="number" value="00305" />
+      <option name="presentableId" value="LOCAL-00305" />
       <option name="project" value="LOCAL" />
-      <updated>1625067597137</updated>
+      <updated>1633722767097</updated>
     </task>
-    <task id="LOCAL-00256" summary="SVM">
-      <created>1625068540264</created>
-      <option name="number" value="00256" />
-      <option name="presentableId" value="LOCAL-00256" />
+    <task id="LOCAL-00306" summary="Neural transfert">
+      <created>1633722968317</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
       <option name="project" value="LOCAL" />
-      <updated>1625068540265</updated>
+      <updated>1633722968317</updated>
     </task>
-    <task id="LOCAL-00257" summary="SVM">
-      <created>1625068555794</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
+    <task id="LOCAL-00307" summary="Neural transfert">
+      <created>1633724046552</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
       <option name="project" value="LOCAL" />
-      <updated>1625068555794</updated>
+      <updated>1633724046552</updated>
     </task>
-    <task id="LOCAL-00258" summary="Tf">
-      <created>1625084212097</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
+    <task id="LOCAL-00308" summary="Neural transfert">
+      <created>1633978315842</created>
+      <option name="number" value="00308" />
+      <option name="presentableId" value="LOCAL-00308" />
       <option name="project" value="LOCAL" />
-      <updated>1625084212097</updated>
+      <updated>1633978315842</updated>
     </task>
-    <task id="LOCAL-00259" summary="req">
-      <created>1625087107136</created>
-      <option name="number" value="00259" />
-      <option name="presentableId" value="LOCAL-00259" />
+    <task id="LOCAL-00309" summary="Color theme">
+      <created>1633978508772</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
       <option name="project" value="LOCAL" />
-      <updated>1625087107136</updated>
+      <updated>1633978508772</updated>
     </task>
-    <task id="LOCAL-00260" summary="req">
-      <created>1625087148772</created>
-      <option name="number" value="00260" />
-      <option name="presentableId" value="LOCAL-00260" />
+    <task id="LOCAL-00310" summary="Color theme">
+      <created>1633978836008</created>
+      <option name="number" value="00310" />
+      <option name="presentableId" value="LOCAL-00310" />
       <option name="project" value="LOCAL" />
-      <updated>1625087148772</updated>
+      <updated>1633978836008</updated>
     </task>
-    <task id="LOCAL-00261" summary="req">
-      <created>1625087289779</created>
-      <option name="number" value="00261" />
-      <option name="presentableId" value="LOCAL-00261" />
+    <task id="LOCAL-00311" summary="Color theme">
+      <created>1633978864857</created>
+      <option name="number" value="00311" />
+      <option name="presentableId" value="LOCAL-00311" />
       <option name="project" value="LOCAL" />
-      <updated>1625087289779</updated>
+      <updated>1633978864857</updated>
     </task>
-    <task id="LOCAL-00262" summary="req">
-      <created>1625087507412</created>
-      <option name="number" value="00262" />
-      <option name="presentableId" value="LOCAL-00262" />
+    <task id="LOCAL-00312" summary="Color theme">
+      <created>1633979119990</created>
+      <option name="number" value="00312" />
+      <option name="presentableId" value="LOCAL-00312" />
       <option name="project" value="LOCAL" />
-      <updated>1625087507412</updated>
+      <updated>1633979119990</updated>
     </task>
-    <task id="LOCAL-00263" summary="req">
-      <created>1625088393124</created>
-      <option name="number" value="00263" />
-      <option name="presentableId" value="LOCAL-00263" />
+    <task id="LOCAL-00313" summary="Color theme">
+      <created>1633979173132</created>
+      <option name="number" value="00313" />
+      <option name="presentableId" value="LOCAL-00313" />
       <option name="project" value="LOCAL" />
-      <updated>1625088393124</updated>
+      <updated>1633979173132</updated>
     </task>
-    <task id="LOCAL-00264" summary="req">
-      <created>1625088442855</created>
-      <option name="number" value="00264" />
-      <option name="presentableId" value="LOCAL-00264" />
+    <task id="LOCAL-00314" summary="Color theme">
+      <created>1633979304427</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
       <option name="project" value="LOCAL" />
-      <updated>1625088442855</updated>
+      <updated>1633979304427</updated>
     </task>
-    <task id="LOCAL-00265" summary="req">
-      <created>1625088615239</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
+    <task id="LOCAL-00315" summary="Color theme">
+      <created>1633979373172</created>
+      <option name="number" value="00315" />
+      <option name="presentableId" value="LOCAL-00315" />
       <option name="project" value="LOCAL" />
-      <updated>1625088615239</updated>
+      <updated>1633979373172</updated>
     </task>
-    <task id="LOCAL-00266" summary="req">
-      <created>1625090176689</created>
-      <option name="number" value="00266" />
-      <option name="presentableId" value="LOCAL-00266" />
+    <task id="LOCAL-00316" summary="Color theme">
+      <created>1633983819706</created>
+      <option name="number" value="00316" />
+      <option name="presentableId" value="LOCAL-00316" />
       <option name="project" value="LOCAL" />
-      <updated>1625090176689</updated>
+      <updated>1633983819706</updated>
     </task>
-    <task id="LOCAL-00267" summary="req">
-      <created>1625090235447</created>
-      <option name="number" value="00267" />
-      <option name="presentableId" value="LOCAL-00267" />
+    <task id="LOCAL-00317" summary="Color theme">
+      <created>1633984037626</created>
+      <option name="number" value="00317" />
+      <option name="presentableId" value="LOCAL-00317" />
       <option name="project" value="LOCAL" />
-      <updated>1625090235447</updated>
+      <updated>1633984037626</updated>
     </task>
-    <task id="LOCAL-00268" summary="neurones">
-      <created>1625090955587</created>
-      <option name="number" value="00268" />
-      <option name="presentableId" value="LOCAL-00268" />
+    <task id="LOCAL-00318" summary="Color theme">
+      <created>1633984110255</created>
+      <option name="number" value="00318" />
+      <option name="presentableId" value="LOCAL-00318" />
       <option name="project" value="LOCAL" />
-      <updated>1625090955588</updated>
+      <updated>1633984110255</updated>
     </task>
-    <task id="LOCAL-00269" summary="neurones">
-      <created>1625091538514</created>
-      <option name="number" value="00269" />
-      <option name="presentableId" value="LOCAL-00269" />
+    <task id="LOCAL-00319" summary="Color theme">
+      <created>1633984155693</created>
+      <option name="number" value="00319" />
+      <option name="presentableId" value="LOCAL-00319" />
       <option name="project" value="LOCAL" />
-      <updated>1625091538514</updated>
+      <updated>1633984155693</updated>
     </task>
-    <task id="LOCAL-00270" summary="neurones">
-      <created>1625091975412</created>
-      <option name="number" value="00270" />
-      <option name="presentableId" value="LOCAL-00270" />
+    <task id="LOCAL-00320" summary="Color theme">
+      <created>1633984191257</created>
+      <option name="number" value="00320" />
+      <option name="presentableId" value="LOCAL-00320" />
       <option name="project" value="LOCAL" />
-      <updated>1625091975412</updated>
+      <updated>1633984191257</updated>
     </task>
-    <task id="LOCAL-00271" summary="DL">
-      <created>1625092128617</created>
-      <option name="number" value="00271" />
-      <option name="presentableId" value="LOCAL-00271" />
+    <task id="LOCAL-00321" summary="Color theme">
+      <created>1633984271377</created>
+      <option name="number" value="00321" />
+      <option name="presentableId" value="LOCAL-00321" />
       <option name="project" value="LOCAL" />
-      <updated>1625092128618</updated>
+      <updated>1633984271377</updated>
     </task>
-    <task id="LOCAL-00272" summary="style image">
-      <created>1625140248870</created>
-      <option name="number" value="00272" />
-      <option name="presentableId" value="LOCAL-00272" />
+    <task id="LOCAL-00322" summary="Color theme">
+      <created>1633984688669</created>
+      <option name="number" value="00322" />
+      <option name="presentableId" value="LOCAL-00322" />
       <option name="project" value="LOCAL" />
-      <updated>1625140248871</updated>
+      <updated>1633984688669</updated>
     </task>
-    <task id="LOCAL-00273" summary="ML">
-      <created>1625171652719</created>
-      <option name="number" value="00273" />
-      <option name="presentableId" value="LOCAL-00273" />
+    <task id="LOCAL-00323" summary="Color theme">
+      <created>1633984727927</created>
+      <option name="number" value="00323" />
+      <option name="presentableId" value="LOCAL-00323" />
       <option name="project" value="LOCAL" />
-      <updated>1625171652719</updated>
+      <updated>1633984727927</updated>
     </task>
-    <task id="LOCAL-00274" summary="ML">
-      <created>1625171869061</created>
-      <option name="number" value="00274" />
-      <option name="presentableId" value="LOCAL-00274" />
+    <task id="LOCAL-00324" summary="Color theme">
+      <created>1633984765228</created>
+      <option name="number" value="00324" />
+      <option name="presentableId" value="LOCAL-00324" />
       <option name="project" value="LOCAL" />
-      <updated>1625171869061</updated>
+      <updated>1633984765228</updated>
     </task>
-    <task id="LOCAL-00275" summary="ML">
-      <created>1625171907817</created>
-      <option name="number" value="00275" />
-      <option name="presentableId" value="LOCAL-00275" />
+    <task id="LOCAL-00325" summary="Color theme">
+      <created>1633984817598</created>
+      <option name="number" value="00325" />
+      <option name="presentableId" value="LOCAL-00325" />
       <option name="project" value="LOCAL" />
-      <updated>1625171907817</updated>
+      <updated>1633984817598</updated>
     </task>
-    <task id="LOCAL-00276" summary="start">
-      <created>1625235839566</created>
-      <option name="number" value="00276" />
-      <option name="presentableId" value="LOCAL-00276" />
+    <task id="LOCAL-00326" summary="Color theme">
+      <created>1633984851014</created>
+      <option name="number" value="00326" />
+      <option name="presentableId" value="LOCAL-00326" />
       <option name="project" value="LOCAL" />
-      <updated>1625235839566</updated>
+      <updated>1633984851014</updated>
     </task>
-    <task id="LOCAL-00277" summary="start">
-      <created>1625235878762</created>
-      <option name="number" value="00277" />
-      <option name="presentableId" value="LOCAL-00277" />
+    <task id="LOCAL-00327" summary="Color theme">
+      <created>1633984974806</created>
+      <option name="number" value="00327" />
+      <option name="presentableId" value="LOCAL-00327" />
       <option name="project" value="LOCAL" />
-      <updated>1625235878762</updated>
+      <updated>1633984974807</updated>
     </task>
-    <task id="LOCAL-00278" summary="start">
-      <created>1625236411974</created>
-      <option name="number" value="00278" />
-      <option name="presentableId" value="LOCAL-00278" />
+    <task id="LOCAL-00328" summary="Color theme">
+      <created>1633985248105</created>
+      <option name="number" value="00328" />
+      <option name="presentableId" value="LOCAL-00328" />
       <option name="project" value="LOCAL" />
-      <updated>1625236411974</updated>
+      <updated>1633985248105</updated>
     </task>
-    <task id="LOCAL-00279" summary="update streamlit 84.2">
-      <created>1626971329213</created>
-      <option name="number" value="00279" />
-      <option name="presentableId" value="LOCAL-00279" />
+    <task id="LOCAL-00329" summary="Color theme">
+      <created>1633985436859</created>
+      <option name="number" value="00329" />
+      <option name="presentableId" value="LOCAL-00329" />
       <option name="project" value="LOCAL" />
-      <updated>1626971329214</updated>
+      <updated>1633985436860</updated>
     </task>
-    <task id="LOCAL-00280" summary="update">
-      <created>1626971760981</created>
-      <option name="number" value="00280" />
-      <option name="presentableId" value="LOCAL-00280" />
+    <task id="LOCAL-00330" summary="Color theme">
+      <created>1633985670856</created>
+      <option name="number" value="00330" />
+      <option name="presentableId" value="LOCAL-00330" />
       <option name="project" value="LOCAL" />
-      <updated>1626971760983</updated>
+      <updated>1633985670856</updated>
     </task>
-    <task id="LOCAL-00281" summary="update streamlit 84.2">
-      <created>1626974664340</created>
-      <option name="number" value="00281" />
-      <option name="presentableId" value="LOCAL-00281" />
+    <task id="LOCAL-00331" summary="Color theme">
+      <created>1633985908425</created>
+      <option name="number" value="00331" />
+      <option name="presentableId" value="LOCAL-00331" />
       <option name="project" value="LOCAL" />
-      <updated>1626974664341</updated>
+      <updated>1633985908425</updated>
     </task>
-    <option name="localTasksCounter" value="282" />
+    <option name="localTasksCounter" value="332" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -467,13 +470,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="knn" />
-    <MESSAGE value="session" />
-    <MESSAGE value="sep" />
-    <MESSAGE value="empty df" />
-    <MESSAGE value="titre" />
-    <MESSAGE value="theme" />
-    <MESSAGE value="ML and DL pages" />
     <MESSAGE value="UMAP" />
     <MESSAGE value="knn pca" />
     <MESSAGE value="home" />
@@ -492,67 +488,56 @@
     <MESSAGE value="start" />
     <MESSAGE value="update" />
     <MESSAGE value="update streamlit 84.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update streamlit 84.2" />
+    <MESSAGE value="fix error" />
+    <MESSAGE value="update streamlit 88 - adding st.download and st.expander" />
+    <MESSAGE value="0.89 version" />
+    <MESSAGE value="update streamlit 1.0 !" />
+    <MESSAGE value="update streamlit 1.0" />
+    <MESSAGE value="Neural transfert" />
+    <MESSAGE value="Color theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Color theme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626689429539">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/1440.-180.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1626689429539" />
-    <state x="-1787" y="-22" width="1654" height="790" key="DiffContextDialog" timestamp="1625233706718">
-      <screen x="-1920" y="-155" width="1920" height="1055" />
+    <state x="458" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631810863841">
+      <screen x="0" y="25" width="1440" height="797" />
     </state>
-    <state x="-1787" y="-22" width="1654" height="790" key="DiffContextDialog/-1920.-155.1920.1055/0.25.1440.796@-1920.-155.1920.1055" timestamp="1625233706718" />
-    <state x="100" y="125" width="1240" height="596" key="DiffContextDialog/0.25.1440.796@0.25.1440.796" timestamp="1624789825564" />
-    <state width="1346" height="199" key="GridCell.Tab.0.bottom" timestamp="1623850018534">
-      <screen x="0" y="25" width="1440" height="799" />
+    <state x="458" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.-123.1920.1055/0.25.1440.797@0.25.1440.797" timestamp="1631810863841" />
+    <state width="1419" height="191" key="GridCell.Tab.0.bottom" timestamp="1633609786961">
+      <screen x="0" y="25" width="1440" height="790" />
     </state>
-    <state width="1346" height="200" key="GridCell.Tab.0.bottom/-1920.-155.1920.1055/0.25.1440.796@0.25.1440.796" timestamp="1623404954334" />
-    <state width="1899" height="304" key="GridCell.Tab.0.bottom/-1920.-180.1920.1080/0.0.1440.900@-1920.-180.1920.1080" timestamp="1623780080308" />
-    <state width="1346" height="199" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1623850018534" />
-    <state width="1346" height="199" key="GridCell.Tab.0.center" timestamp="1623850018533">
-      <screen x="0" y="25" width="1440" height="799" />
+    <state width="1419" height="191" key="GridCell.Tab.0.bottom/-1920.-123.1920.1055/0.25.1440.790@0.25.1440.790" timestamp="1633609786961" />
+    <state width="1419" height="191" key="GridCell.Tab.0.center" timestamp="1633609786960">
+      <screen x="0" y="25" width="1440" height="790" />
     </state>
-    <state width="1346" height="200" key="GridCell.Tab.0.center/-1920.-155.1920.1055/0.25.1440.796@0.25.1440.796" timestamp="1623404954334" />
-    <state width="1899" height="304" key="GridCell.Tab.0.center/-1920.-180.1920.1080/0.0.1440.900@-1920.-180.1920.1080" timestamp="1623780080307" />
-    <state width="1346" height="199" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1623850018533" />
-    <state width="1346" height="199" key="GridCell.Tab.0.left" timestamp="1623850018533">
-      <screen x="0" y="25" width="1440" height="799" />
+    <state width="1419" height="191" key="GridCell.Tab.0.center/-1920.-123.1920.1055/0.25.1440.790@0.25.1440.790" timestamp="1633609786960" />
+    <state width="1419" height="191" key="GridCell.Tab.0.left" timestamp="1633609786960">
+      <screen x="0" y="25" width="1440" height="790" />
     </state>
-    <state width="1346" height="200" key="GridCell.Tab.0.left/-1920.-155.1920.1055/0.25.1440.796@0.25.1440.796" timestamp="1623404954333" />
-    <state width="1899" height="304" key="GridCell.Tab.0.left/-1920.-180.1920.1080/0.0.1440.900@-1920.-180.1920.1080" timestamp="1623780080306" />
-    <state width="1346" height="199" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1623850018533" />
-    <state width="1346" height="199" key="GridCell.Tab.0.right" timestamp="1623850018533">
-      <screen x="0" y="25" width="1440" height="799" />
+    <state width="1419" height="191" key="GridCell.Tab.0.left/-1920.-123.1920.1055/0.25.1440.790@0.25.1440.790" timestamp="1633609786960" />
+    <state width="1419" height="191" key="GridCell.Tab.0.right" timestamp="1633609786961">
+      <screen x="0" y="25" width="1440" height="790" />
     </state>
-    <state width="1346" height="200" key="GridCell.Tab.0.right/-1920.-155.1920.1055/0.25.1440.796@0.25.1440.796" timestamp="1623404954334" />
-    <state width="1899" height="304" key="GridCell.Tab.0.right/-1920.-180.1920.1080/0.0.1440.900@-1920.-180.1920.1080" timestamp="1623780080308" />
-    <state width="1346" height="199" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1623850018533" />
-    <state x="393" y="194" key="Vcs.Push.Dialog.v2" timestamp="1626975006497">
-      <screen x="0" y="25" width="1440" height="796" />
+    <state width="1419" height="191" key="GridCell.Tab.0.right/-1920.-123.1920.1055/0.25.1440.790@0.25.1440.790" timestamp="1633609786961" />
+    <state x="-1396" y="101" key="Vcs.Push.Dialog.v2" timestamp="1633985910943">
+      <screen x="-1920" y="-123" width="1920" height="1055" />
     </state>
-    <state x="393" y="194" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.796@-1920.-155.1920.1055" timestamp="1625236413163" />
-    <state x="393" y="194" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.796@0.25.1440.796" timestamp="1625140252753" />
-    <state x="-1396" y="68" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.797@-1920.-155.1920.1055" timestamp="1623267361970" />
-    <state x="393" y="193" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.797@0.25.1440.797" timestamp="1624291685091" />
-    <state x="-1396" y="68" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.798@-1920.-155.1920.1055" timestamp="1623259872757" />
-    <state x="393" y="194" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.798@0.25.1440.798" timestamp="1624831616382" />
-    <state x="-1396" y="68" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.799@-1920.-155.1920.1055" timestamp="1625090958061" />
-    <state x="393" y="194" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.799@0.25.1440.799" timestamp="1625092130133" />
-    <state x="-1396" y="68" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.801@-1920.-155.1920.1055" timestamp="1625088394620" />
-    <state x="393" y="194" key="Vcs.Push.Dialog.v2/-1920.-155.1920.1055/0.25.1440.801@0.25.1440.801" timestamp="1624889241378" />
-    <state x="-1396" y="51" key="Vcs.Push.Dialog.v2/-1920.-155.1920.974/0.25.1440.875@-1920.-155.1920.974" timestamp="1623329018807" />
-    <state x="393" y="210" key="Vcs.Push.Dialog.v2/-1920.-155.1920.974/0.25.1440.875@0.25.1440.875" timestamp="1623332848954" />
-    <state x="-1396" y="48" key="Vcs.Push.Dialog.v2/-1920.-180.1920.1080/0.0.1440.900@-1920.-180.1920.1080" timestamp="1624443691584" />
-    <state x="393" y="194" key="Vcs.Push.Dialog.v2/0.25.1440.796@0.25.1440.796" timestamp="1624797545469" />
-    <state x="393" y="194" key="Vcs.Push.Dialog.v2/0.25.1440.797@0.25.1440.797" timestamp="1624187269688" />
-    <state x="393" y="195" key="Vcs.Push.Dialog.v2/0.25.1440.799@0.25.1440.799" timestamp="1624650806984" />
-    <state x="393" y="195" key="Vcs.Push.Dialog.v2/0.25.1440.801@0.25.1440.801" timestamp="1624650154198" />
+    <state x="-1396" y="101" key="Vcs.Push.Dialog.v2/-1920.-123.1920.1055/0.25.1440.790@-1920.-123.1920.1055" timestamp="1633985910943" />
+    <state x="393" y="193" key="Vcs.Push.Dialog.v2/-1920.-123.1920.1055/0.25.1440.790@0.25.1440.790" timestamp="1633610840873" />
+    <state x="-1396" y="101" key="Vcs.Push.Dialog.v2/-1920.-123.1920.1055/0.25.1440.794@-1920.-123.1920.1055" timestamp="1633985438580" />
+    <state x="393" y="193" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1633724048406" />
     <state x="393" y="194" key="Vcs.Push.Dialog.v2/1440.-155.1920.1055/0.25.1440.796@0.25.1440.796" timestamp="1626975006497" />
-    <state x="393" y="195" key="Vcs.Push.Dialog.v2/1440.-155.1920.1055/0.25.1440.801@0.25.1440.801" timestamp="1626971762270" />
-    <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1624381331801">
-      <screen x="-1920" y="-180" width="1920" height="1080" />
+    <state x="393" y="195" key="Vcs.Push.Dialog.v2/1440.-155.1920.1055/0.25.1440.801@0.25.1440.801" timestamp="1627030893339" />
+    <state x="-1165" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633984678897">
+      <screen x="-1920" y="-123" width="1920" height="1055" />
     </state>
-    <state width="960" height="540" key="XDebugger.FullValuePopup/-1920.-180.1920.1080/0.0.1440.900@-1920.-180.1920.1080" timestamp="1624381331801" />
+    <state x="-1165" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-123.1920.1055/0.25.1440.794@-1920.-123.1920.1055" timestamp="1633984678897" />
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1633608376293">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup/-1920.-123.1920.1055/0.25.1440.790@0.25.1440.790" timestamp="1633608376293" />
   </component>
 </project>
